@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Menu, X, Book, Code, Gamepad2, Users, Target, Zap, ChevronDown, Github, Mail, Linkedin, Play, Star, Award, TrendingUp } from 'lucide-react';
 
+
 export default function JungleBlasterWeb() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('inicio');
@@ -633,7 +634,7 @@ public class ConexionBD : MonoBehaviour
               <div className="flex flex-wrap justify-center gap-6 mb-8">
                 {[
                   { label: 'Plataforma', value: 'Windows PC', icon: Gamepad2 },
-                  { label: 'Tamaño', value: '150 MB', icon: Download },
+                  { label: 'Tamaño', value: '87 kb', icon: Download },
                   { label: 'Engine', value: 'Unity', icon: Code }
                 ].map((spec, i) => (
                   <div key={i} className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700/50">
@@ -648,12 +649,8 @@ public class ConexionBD : MonoBehaviour
             </div>
 
             <a
-              href="#"
+              href={'https://drive.google.com/file/d/1T42WDC9j0ZhkLaJli_D2wDzl9kVPLfJW/view?usp=sharing'}
               className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-bold py-5 px-12 rounded-xl transition-all transform hover:scale-105 text-lg shadow-2xl shadow-emerald-500/50"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('¡Demo próximamente disponible! Completa el link de descarga cuando el archivo esté listo.');
-              }}
             >
               <Download size={28} />
               <span>Descargar Demo Ahora</span>
@@ -701,10 +698,10 @@ public class ConexionBD : MonoBehaviour
                 Un arcade de acción que combina mecánicas clásicas con tecnología moderna.
               </p>
               <div className="flex gap-3">
-                <a href="#" className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg border border-slate-700/50 hover:border-emerald-500/50 transition-all">
+                <a href="https://github.com/WS-ALEXX/Jungle-Blaster" className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg border border-slate-700/50 hover:border-emerald-500/50 transition-all">
                   <Github className="text-slate-400 hover:text-emerald-400 transition-colors" size={20} />
                 </a>
-                <a href="#" className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg border border-slate-700/50 hover:border-emerald-500/50 transition-all">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg border border-slate-700/50 hover:border-emerald-500/50 transition-all">
                   <Mail className="text-slate-400 hover:text-emerald-400 transition-colors" size={20} />
                 </a>
                 <a href="#" className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg border border-slate-700/50 hover:border-emerald-500/50 transition-all">
